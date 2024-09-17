@@ -1,0 +1,39 @@
+.custom-navbar {
+    background-color: #c0c0c0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .navbar-collapse {
+    flex-grow: 1;
+    
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .custom-text {
+    color: #0a0719;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 2rem !important;
+    margin: 0 1rem;
+  }
+  
+  .custom-text:hover {
+    color: #ff0000;
+  }
