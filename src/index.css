@@ -29,6 +29,28 @@
   color: black;
 }
 
+.articlesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.commentsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  min-height: 10vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -46,7 +68,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
 }
 
