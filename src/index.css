@@ -25,6 +25,10 @@
   color: #ff0000;
 }
 
+.Article{
+  color: black;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

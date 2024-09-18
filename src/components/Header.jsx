@@ -10,7 +10,7 @@ const Header = () => {
       <>
         <Navbar expand="lg" className="custom-navbar">
           <Container fluid>
-            <Navbar.Brand href="#home" className="d-flex align-items-center">
+            <Navbar.Brand href="/" className="d-flex align-items-center">
               <img
                 alt="Northcoders logo"
                 src={logo}
