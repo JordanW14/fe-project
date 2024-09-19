@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Card from "react-bootstrap/Card"
 import { getArticle } from "../api"
 import Comments from "./Comments"
+import Votes from "./Votes"
 
 const SingleArticle = () => {
 
@@ -26,8 +27,8 @@ const SingleArticle = () => {
                 <Card.Title>{<h1>{article.title}</h1>}</Card.Title>
                 <Card.Text>Topic: {article.topic}</Card.Text>
                 <Card.Text>Written By {article.author}</Card.Text>
-                <Card.Text>Votes: {article.votes}</Card.Text>
                 <Card.Text>{article.body}</Card.Text>
+                <Votes article_id={article.article_id} votes={article.votes}/>
             </Card.Body>
         </Card>
             <Comments/>
