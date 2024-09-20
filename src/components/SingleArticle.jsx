@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card"
 import { getArticle } from "../api"
 import Comments from "./Comments"
 import Votes from "./Votes"
+import AddComment from "./AddComment"
 
 const SingleArticle = () => {
 
@@ -31,10 +32,11 @@ const SingleArticle = () => {
                 <Votes article_id={article.article_id} votes={article.votes}/>
             </Card.Body>
         </Card>
-            <Comments/>
+        <h2 className="commentsContainer">Comments</h2>
+            <Comments />
         </div>
         </>
     )
 }
 
-export default SingleArticle 
+export default SingleArticle

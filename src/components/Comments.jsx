@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { getArticleComments } from "../api"
 import Card from "react-bootstrap/Card"
+import AddComment from "./AddComment"
 
 const Comments = () => {
 
@@ -16,9 +17,13 @@ useEffect(() => {
         });
         }, [article_id])
 
+        const handleNewComment = (newComment) => {
+            setComments((existingComments) => [newComment, ...existingComments]);
+          };
+
     return(
     <div>
-    <h2 className="commentsContainer">Comments</h2>
+        <AddComment article_id={article_id} onNewComment={handleNewComment} />
         {comments.length === 0 ? (
             <p>No comments</p>
             ) : (

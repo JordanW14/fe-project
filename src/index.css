@@ -18,7 +18,7 @@
   font-weight: bold;
   transition: color 0.3s ease;
   font-size: large;
-  margin: 0 1rem;
+  
 }
 
 .articleText:hover {
@@ -48,6 +48,11 @@
   margin: 0 auto;
   padding: 20px;
   color: black;
+}
+
+.commentsContainer textarea{
+  width: 100%;
+  max-width: 500px;
 }
 
 

@@ -10,7 +10,6 @@ const Votes = ({ article_id, votes }) => {
         setArticleVotes((articleVotes) => articleVotes + 1)
         patchVotes(article_id)
     }
-    console.log(votes, "<==votes")
     
     return (
       <div>
