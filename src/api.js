@@ -45,3 +45,7 @@ export const getUsernames = () => {
     return usernames;
   });
 };
+
+export const deleteComment = (commentId) => {
+  return ncNews.delete(`/comments/${commentId}`);
+};

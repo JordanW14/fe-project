@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { postComment, getUsernames } from "../api";
 
-const AddComment = ({ article_id, onNewComment }) => {
+const AddComment = ({ article_id, onNewComment, onUsernameChange }) => {
   const [comment, setComment] = useState("");
   const [username, setUsername] = useState("");
   const [validUsernames, setValidUsernames] = useState([]);
@@ -19,8 +19,10 @@ const AddComment = ({ article_id, onNewComment }) => {
     setUsername(enteredUsername);
     if (validUsernames.includes(enteredUsername)) {
       setIsValidUser(true);
+      onUsernameChange(enteredUsername)
     } else {
       setIsValidUser(false);
+      onUsernameChange("");
     }
   };
 
@@ -33,6 +35,7 @@ const AddComment = ({ article_id, onNewComment }) => {
           setUsername("");
           setIsValidUser(false);
           onNewComment(newComment)
+          onUsernameChange("")
         });
     }
   };
